@@ -2,8 +2,18 @@ import React from 'react'
 import { Link } from 'react-router'
 const Navbar = () => {
   return (
-    <div><Link to='/'>Home</Link>
-      <Link to='/about' >About</Link></div>
+    <div className='header'>
+      <div><h1 className='link'>Logo</h1></div>
+      <div>
+        <ul>
+          <li> <Link to='/' className='link'>Home</Link></li>
+          <li>  <Link to='/about'className='link' >About</Link></li>
+          <li>  <Link to='/login' className='link'>Login</Link></li>
+        </ul>
+      </div>
+
+    </div>
+
   )
 }
 
