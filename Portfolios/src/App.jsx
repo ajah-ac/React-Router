@@ -8,6 +8,7 @@ import AboutMe from './AboutMe'
 import Blog from './Blog'
 import Services from './Services'
 import Portfolio from './Portfolio'
+import Blogpost from './Blogpost'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,8 +21,15 @@ function App() {
 <Route path='/' element={<h1>Welcome to my porfolio page</h1>}/>
 <Route path='/about' element={<AboutMe/>}/>
 <Route path='/portfolio' element={<Portfolio/>}/>
-<Route path='/services' element={<Services/>}/>
+<Route path='/services' element={<Services/>}>
+<Route index element={<h1>Services Offered</h1>}/>
+<Route path='print' element={<h1>This is the page about the printing service </h1>}/>
+<Route path='run' element={<h1>This is the page about the running a business service </h1>}/>
+<Route path='auditing' element={<h1>This is the page about the auditing service </h1>}/>
+</Route>
 <Route path='/blog' element={<Blog/>}/>
+<Route path='/blog/:id' element={<Blogpost/>}/>
+
 <Route path='/book' element={<h1>Hello <br/>Contact me on:janedoe@gmail.com</h1>}/>
 
 
