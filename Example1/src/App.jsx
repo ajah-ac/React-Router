@@ -15,12 +15,13 @@ function App() {
       <div>
 
         <Navbar />
-      
-      <Routes>
-        <Route path="/" element={<Home />} />
+         <Routes>
+        <Route path="/" element={<Home/>}/>
+
         <Route path="/tutorials" element={<Tutorials />}>
-          <Route path="javascript" element={<Javascript />} />
+        <Route path="javascript" element={<Javascript />} />
         </Route>
+        
         <Route path="/about" element={<About />} />
         <Route path='/login' element={<Login />}></Route>
         <Route path='*' element={<ErrorPage />}> </Route>

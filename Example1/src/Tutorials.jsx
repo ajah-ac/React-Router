@@ -6,10 +6,10 @@ const Tutorials = () => {
         <div>
             <h1> Tutorials</h1>
             <ul><li>
-                <Link to='javascript' className='link'>JsTutorial This the javascript tutorial page </Link>
+                <Link to='/javascript' className='link'>Javascript</Link>
             </li>
             </ul>
-            <Outlet/>
+            <Outlet />
         </div>
     )
 }
