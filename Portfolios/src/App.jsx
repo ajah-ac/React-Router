@@ -21,6 +21,7 @@ function App() {
 <Route path='/' element={<h1>Welcome to my porfolio page</h1>}/>
 <Route path='/about' element={<AboutMe/>}/>
 <Route path='/portfolio' element={<Portfolio/>}/>
+<Route path='/portfolio/:id' element={<Portfolio/>}/>
 <Route path='/services' element={<Services/>}>
 <Route index element={<h1>Services Offered</h1>}/>
 <Route path='print' element={<h1>This is the page about the printing service </h1>}/>
@@ -31,8 +32,6 @@ function App() {
 <Route path='/blog/:id' element={<Blogpost/>}/>
 
 <Route path='/book' element={<h1>Hello <br/>Contact me on:janedoe@gmail.com</h1>}/>
-
-
 
 
 
