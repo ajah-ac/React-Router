@@ -9,6 +9,9 @@ import Blog from './Blog'
 import Services from './Services'
 import Portfolio from './Portfolio'
 import Blogpost from './Blogpost'
+import BookCall from './BookCall'
+import BookingForm from './BookingForm'
+import ThankYou from './ThankYou'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,9 +32,12 @@ function App() {
 <Route path='auditing' element={<h1>This is the page about the auditing service </h1>}/>
 </Route>
 <Route path='/blog' element={<Blog/>}/>
+<Route path='/thanks' element={<ThankYou/>}/>
 <Route path='/blog/:id' element={<Blogpost/>}/>
 
-<Route path='/book' element={<h1>Hello <br/>Contact me on:janedoe@gmail.com</h1>}/>
+<Route path='/book' element={<BookCall/>}/>
+<Route path='/bookform' element={<BookingForm/>}/>
+
 
 
 
